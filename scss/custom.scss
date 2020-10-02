@@ -3,7 +3,8 @@
 $body-bg: #000;
 $body-color: white;
 $primary: hotpink;
-$font-family-base: Arial;
+// $font-family-base: Arial;
+$font-family-base: "Roboto Mono", monospace;
 
 // Include all Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -12,4 +13,13 @@ $font-family-base: Arial;
 
 body {
   margin: 20px;
+}
+
+.navbar {
+  align-items: baseline;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 2em;
 }
