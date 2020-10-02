@@ -5,6 +5,7 @@ $body-color: white;
 $primary: hotpink;
 // $font-family-base: Arial;
 $font-family-base: "Roboto Mono", monospace;
+$enable-responsive-font-sizes: true;
 
 // Include all Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -12,14 +13,63 @@ $font-family-base: "Roboto Mono", monospace;
 // Add you custom CSS
 
 body {
-  margin: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .navbar {
   align-items: baseline;
 }
 
+.nav-item:hover {
+  opacity: 0.7;
+}
+
 .fa {
   padding: 5px;
-  font-size: 2em;
+  font-size: xx-large;
 }
+.fa:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.card {
+  margin: 20px;
+  color: black;
+}
+
+#profile {
+  border-radius: 50%;
+  border: 2px;
+}
+
+// .typewriter h1 {
+//   overflow: hidden; /* Ensures the content is not revealed until the animation */
+//   border-right: 0.15em solid orange; /* The typwriter cursor */
+//   white-space: nowrap; /* Keeps the content on a single line */
+//   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//   letter-spacing: 0.15em; /* Adjust as needed */
+//   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+// }
+
+// /* The typing effect */
+// @keyframes typing {
+//   from {
+//     width: 0;
+//   }
+//   to {
+//     width: 100%;
+//   }
+// }
+
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from,
+//   to {
+//     border-color: transparent;
+//   }
+//   50% {
+//     border-color: orange;
+//   }
+// }
