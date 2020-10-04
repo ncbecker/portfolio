@@ -43,7 +43,7 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar sticky-top navbar-expand-lg">
         <a class="navbar-brand" href="#top">/ncbecker</a>
         <button
           class="navbar-toggler"
@@ -98,7 +98,7 @@
       </div>
 
       <div class="container-fluid">
-        <section id="about">
+        <div id="about">
           <h2><u>01</u> About Me</h2>
           <div class="container-fluid">
             <img id="profile" src="images/profile_silhouette.jpeg" />
@@ -141,7 +141,7 @@
         </section>
       </div>
 
-      <section id="skilltool">
+      <div id="skilltool">
         <h2><u>02</u> Skills and Tools</h2>
         <div class="card" style="width: 18rem">
           <div class="card-body">
@@ -213,9 +213,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="interests">
+      <div id="interests">
         <h2><u>03</u> Current Interests</h2>
         <div
           id="carouselExampleCaptions"
@@ -239,7 +239,7 @@
                 alt="Code"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Web Development 🤓</h5>
+                <h4 class="picdescription">Web Development</h5>
               </div>
             </div>
             <div class="carousel-item">
@@ -249,13 +249,13 @@
                 alt="Training"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Training 💪</h5>
+                <h4 class="picdescription">Training</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="images/bread.jpg" class="d-block w-100" alt="Bread" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Self-made sourdough bread 👨‍🍳</h5>
+                <h4 class="picdescription">Self-made sourdough bread</h5>
               </div>
             </div>
           </div>
@@ -278,10 +278,11 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </section>
+      </div>
 
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar">
         <a class="navbar-brand" href="#top">/ncbecker</a>
+        <span class="navbar-text"><a id="imprint" href="imprint.html">Imprint</a></span>
         <span class="navbar-text"
           ><a
             class="fa fa-github"
@@ -298,6 +299,7 @@
         ></span>
       </nav>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

@@ -1,8 +1,8 @@
 // Your variable overrides
 // See node_modules/bootstrap/scss/_variables.scss for all variables
-$body-bg: #000;
-$body-color: white;
-$primary: hotpink;
+$body-bg: black;
+$body-color: #fdfcdc;
+$primary: #fdfcdc;
 // $font-family-base: Arial;
 $font-family-base: "Roboto Mono", monospace;
 $enable-responsive-font-sizes: true;
@@ -19,6 +19,7 @@ body {
 
 .navbar {
   align-items: baseline;
+  background-color: #161a1d;
 }
 
 .nav-item:hover {
@@ -34,51 +35,63 @@ body {
   opacity: 0.7;
 }
 
-.jumbotron {
-  color: #000;
+#imprint {
+  padding: 5px;
+  // color: #fdfcdc;
 }
 
-section {
+#imprint:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.jumbotron {
+  background-color: #fdfcdc;
+  color: black;
+}
+
+#about {
   min-height: 100vh;
   padding-top: 80px;
 }
 
-.card {
-  margin: 20px;
-  color: black;
+#skilltool,
+#interests {
+  padding-top: 80px;
 }
 
 #profile {
   border-radius: 50%;
   border: 2px;
+  width: 20vw;
 }
 
-// .typewriter h1 {
-//   overflow: hidden; /* Ensures the content is not revealed until the animation */
-//   border-right: 0.15em solid orange; /* The typwriter cursor */
-//   white-space: nowrap; /* Keeps the content on a single line */
-//   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-//   letter-spacing: 0.15em; /* Adjust as needed */
-//   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-// }
+.card {
+  margin: 20px;
+  background-color: #fdfcdc;
+  color: black;
+  transition: transform 0.2s;
+}
 
-// /* The typing effect */
-// @keyframes typing {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 100%;
-//   }
-// }
+.card:hover {
+  transform: scale(1.1);
+}
 
-// /* The typewriter cursor effect */
-// @keyframes blink-caret {
-//   from,
-//   to {
-//     border-color: transparent;
-//   }
-//   50% {
-//     border-color: orange;
-//   }
-// }
+.progress-bar {
+  background-color: black;
+}
+
+.picdescription {
+  color: #fdfcdc;
+  text-shadow: 1px 1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
+    -1px -1px 0px black;
+}
+
+.carousel-item img {
+  // position: absolute;
+  object-fit: cover;
+  // top: 0;
+  // left: 0;
+  min-height: 50vh;
+  max-height: 600px;
+}
