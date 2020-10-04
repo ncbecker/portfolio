@@ -12,6 +12,10 @@ $enable-responsive-font-sizes: true;
 
 // Add you custom CSS
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -37,7 +41,6 @@ body {
 
 #imprint {
   padding: 5px;
-  // color: #fdfcdc;
 }
 
 #imprint:hover {
@@ -48,6 +51,13 @@ body {
 .jumbotron {
   background-color: #fdfcdc;
   color: black;
+}
+
+.sectionheadline {
+  margin-bottom: 15px;
+}
+
+.container-float {
 }
 
 #about {
@@ -63,7 +73,16 @@ body {
 #profile {
   border-radius: 50%;
   border: 2px;
-  width: 20vw;
+  max-width: 30vw;
+  padding: 20px;
+  float: left;
+}
+
+#skilltoollayout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .card {
@@ -88,10 +107,7 @@ body {
 }
 
 .carousel-item img {
-  // position: absolute;
   object-fit: cover;
-  // top: 0;
-  // left: 0;
-  min-height: 50vh;
+  // min-height: 50vh;
   max-height: 600px;
 }

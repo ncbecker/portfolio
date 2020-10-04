@@ -9943,6 +9943,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -9981,6 +9985,10 @@ body {
   color: black;
 }
 
+.sectionheadline {
+  margin-bottom: 15px;
+}
+
 #about {
   min-height: 100vh;
   padding-top: 80px;
@@ -9994,7 +10002,16 @@ body {
 #profile {
   border-radius: 50%;
   border: 2px;
-  width: 20vw;
+  max-width: 30vw;
+  padding: 20px;
+  float: left;
+}
+
+#skilltoollayout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .card {
@@ -10019,7 +10036,6 @@ body {
 
 .carousel-item img {
   object-fit: cover;
-  min-height: 50vh;
   max-height: 600px;
 }
 
